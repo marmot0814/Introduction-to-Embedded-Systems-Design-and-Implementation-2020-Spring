@@ -41,12 +41,11 @@ maxz = 0
 
 print "Now repeatedly rotate the hmc5883l around all three axes"
 
-for i in range(0,100):
+for i in range(0,200):
     x_out = read_word_2c(3)
     y_out = read_word_2c(7)
     z_out = read_word_2c(5)
-    
-    
+
     if x_out < minx:
         minx=x_out
     
