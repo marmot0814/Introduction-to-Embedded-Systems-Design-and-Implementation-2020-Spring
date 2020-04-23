@@ -1,0 +1,14 @@
+\title{2020/04/10 Discussion}
+\author{0616014 楊政道}
+\maketitle
+\thispagestyle{fancy}
+\section{Discussion 1}
+\subsection{Read the online document. If we want to set the output file name as data and time, how do we set filename in the code?}
+\subsubsection{Origin}
+\begin{lstlisting}[language=Python]
+camera.capture_continuous('image{counter:02d}.jpg'))
+\end{lstlisting}
+\subsubsection{New}
+\begin{lstlisting}[language=Python]
+camera.capture_continuous('image{timestamp:%Y%m%d_%H%M}.jpg'))
+\end{lstlisting}
