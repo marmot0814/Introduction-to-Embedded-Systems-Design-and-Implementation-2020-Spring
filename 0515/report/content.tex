@@ -1,0 +1,45 @@
+\title{2020/05/15 Discussion}
+\author{0616014 楊政道}
+\maketitle
+\thispagestyle{fancy}
+\section{Discussion1}
+\subsection{Advertise an URL with your student ID.}
+\paragraph{}
+推播的網址\texttt{http://tw.0616014}, 轉成Eddystone message的值為
+\begin{center}
+ \begin{tabular}{||c | c||}
+ \hline
+ 數值(16進位) & 網址\\ [0.5ex]
+ \hline\hline
+ 02 & http:// \\
+ \hline
+ 74 & t \\
+ \hline
+ 77 & w \\
+ \hline
+ 2e & . \\
+ \hline
+ 30 & 0 \\
+ \hline
+ 36 & 6 \\
+ \hline
+ 31 & 1 \\
+ \hline
+ 36 & 6 \\
+ \hline
+ 30 & 0 \\
+ \hline
+ 31 & 1 \\
+ \hline
+ 34 & 4 \\
+ \hline
+\end{tabular}
+\end{center}
+\section{Discussion2}
+\subsection{What is the maximum value of major and minor ID? How to calculate this value?}
+\paragraph{}
+major ID和minor ID都用2 bytes的空間來儲存, 2 bytes為16個bits, 所以最大的ID value為$2^{16} - 1 = 65535$。
+\section{Discussion3}
+\subsection{If we put a lot of beacons, can we get a more precise result?}
+\paragraph{}
+可以, 原理和GPS很像, 同時間最少只要有三個距離資料就可以推算出自己的三維座標位置(三個球體的交點)。
